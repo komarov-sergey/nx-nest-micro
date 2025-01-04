@@ -2,8 +2,8 @@ import { IUser, UserRole } from '@purple/interfaces';
 import { compare, genSalt, hash } from 'bcryptjs';
 
 export class UserEntity implements IUser {
-  _id?: string;
-  displayName?: string;
+  _id: string;
+  displayName: string;
   email: string;
   passwordHash: string;
   role: UserRole;
